@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
     Owen.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```En gelişmiş UserBot. 🦸‍♀️ Owen Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/OwenSupport\n*Telegram Channel:* https://t.me/WhatsOwen\n*Plugin Channel:* ' + Config.CHANNEL , MessageType.text);
+            await message.client.sendMessage(message.jid,'```En gelişmiş UserBot. 🦸‍♀️ MSD Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/\n*Telegram Channel:* https://t.me/\n*Plugin Channel:* ' + Config.CHANNEL , MessageType.text);
         }
         else {
             var payload = Config.ALIVEMSG
@@ -56,8 +56,7 @@ else if (Config.WORKTYPE == 'public') {
     Owen.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```En gelişmiş UserBot. 🦸‍♀️ Owen Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/OwenSupport\n*Telegram Channel:* https://t.me/Owenremaster\n*Plugin Channel:* ' + Config.CHANNEL , MessageType.text);
-        }
+            await message.client.sendMessage(message.jid,'```En gelişmiş UserBot. 🦸‍♀️ MSD Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/
         else {
             var payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
